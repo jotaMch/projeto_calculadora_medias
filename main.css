@@ -69,6 +69,10 @@ button {
     border-radius: 6px;
 }
 
+button:hover {
+    background-color: #047d2c;
+}
+
 table {
     width: 100%;
 }
