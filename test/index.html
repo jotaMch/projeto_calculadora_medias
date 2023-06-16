@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alterar Cor do Body</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #337ab7;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn" onclick="alterarCor()">Alterar Cor</button>
+
+  <script>
+    var corOriginal = document.body.style.backgroundColor;
+    var corAlterada = "#ff0000";
+    var botaoClicado = false;
+
+    function alterarCor() {
+      if (botaoClicado) {
+        document.body.style.backgroundColor = corOriginal;
+        botaoClicado = false;
+      } else {
+        document.body.style.backgroundColor = corAlterada;
+        botaoClicado = true;
+      }
+    }
+  </script>
+</body>
+</html>
